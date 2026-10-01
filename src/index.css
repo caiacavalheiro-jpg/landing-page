@@ -1,111 +1,260 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-body {
+* {
+  padding: 0;
   margin: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+.first {
+  background-color: cornflowerblue;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: auto;
 }
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+
+a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-p {
+
+a:hover {
+  color: rgb(89, 89, 230);
+  text-decoration: none;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 3rem;
+}
+
+.behind {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  padding: 0 10px;
+
+  z-index: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: clamp(4rem, 13vw, 12rem);
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgba(44, 95, 138, 0.15);
+
+  white-space: normal;
+  overflow-wrap: break-word;
+  user-select: none;
+  pointer-events: none;
+}
+
+.name {
+  position: relative;
+  z-index: 2;
+
+  font-family: Arial, sans-serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 400;
+  font-style: italic;
+
+  color: #10243a;
+
+  text-align: center;
+  letter-spacing: -0.04em;
+
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+.rule {
+  position: relative;
+  z-index: 2;
+
+  width: 48px;
+  height: 2px;
+
+  background: cornflowerblue;
+
+  margin: 1.5rem auto;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.intro {
+  position: relative;
+  z-index: 2;
+
+  max-width: 430px;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+
+  color: #4b5d70;
+
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.intro strong {
+  color: #10243a;
+  font-weight: 600;
+}
+
+.social-buttons {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 25px;
+  margin-top: 35px;
+  padding: 50px 20px;
+
+  background-image: url(./assets/hero02.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 500px;
+  height: auto;
+}
+
+.social-btn {
+  width: 300px;
+  min-height: 110px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 20px 25px;
+
+  background: rgba(10, 25, 45, 0.55);
+  border: 2px solid rgba(107, 163, 214, 0.65);
+  border-radius: 60px;
+
+  color: white;
+  text-decoration: none;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-5px);
+  background: rgba(44, 95, 138, 0.45);
+  border-color: cornflowerblue;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.social-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  margin-right: 18px;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  color: white;
+}
+
+.social-icon svg {
+  width: 29px;
+  height: 29px;
+
+  fill: currentColor;
+  stroke: none;
+}
+
+.instagram-icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.instagram-icon svg circle:last-child {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.social-info strong {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.social-info small {
+  margin-top: 6px;
+
+  color: #aebed0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.arrow {
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+
+  transition: 0.3s ease;
+}
+
+.social-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+
+
+.vercel-btn {
+  width: 500px;
+  min-height: 100px;
+
+  margin: 10px auto 0;
+
+  border-radius: 55px;
+}
+
+.vercel-icon svg {
+  width: 27px;
+  height: 27px;
+  fill: white;
 }
