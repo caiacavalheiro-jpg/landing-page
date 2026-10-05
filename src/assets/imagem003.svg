@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="40 30 600 360">
+<rect x="40" y="30" width="600" height="360" rx="16" fill="#0B2A5B"/>
+<circle cx="340" cy="215" r="150" fill="#12408A"/>
+<rect x="200" y="140" width="280" height="170" rx="10" fill="#0A1F44" stroke="#7CC0FF" stroke-width="3"/>
+<rect x="215" y="155" width="250" height="140" rx="4" fill="#102E66"/>
+<path d="M170 310 L510 310 L490 332 L190 332 Z" fill="#4DA3FF"/>
+<rect x="300" y="310" width="80" height="6" rx="3" fill="#0A1F44"/>
+<rect x="230" y="172" width="70" height="8" rx="4" fill="#4DA3FF"/>
+<rect x="244" y="192" width="120" height="8" rx="4" fill="#7CC0FF"/>
+<rect x="244" y="212" width="90" height="8" rx="4" fill="#B5DAFF"/>
+<rect x="230" y="232" width="110" height="8" rx="4" fill="#2F7DE1"/>
+<rect x="244" y="252" width="70" height="8" rx="4" fill="#7CC0FF"/>
+<text x="380" y="270" font-family="monospace" font-size="34" fill="#7CC0FF">{ }</text>
+<ellipse cx="110" cy="100" rx="38" ry="12" fill="#7CC0FF"/>
+<path d="M72 100 L72 140 Q72 152 110 152 Q148 152 148 140 L148 100" fill="#2F7DE1"/>
+<ellipse cx="110" cy="140" rx="38" ry="12" fill="#4DA3FF"/>
+<path d="M72 120 Q110 134 148 120" fill="none" stroke="#B5DAFF" stroke-width="2"/>
+<path d="M148 125 L200 190" fill="none" stroke="#4DA3FF" stroke-width="3" stroke-dasharray="6 6"/>
+<rect x="545" y="75" width="80" height="50" rx="8" fill="#0A1F44" stroke="#7CC0FF" stroke-width="2"/>
+<text x="560" y="107" font-family="monospace" font-size="20" fill="#B5DAFF">API</text>
+<path d="M545 110 L480 180" fill="none" stroke="#4DA3FF" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="560" cy="300" r="34" fill="#2F7DE1"/>
+<circle cx="560" cy="300" r="14" fill="#0B2A5B"/>
+<g fill="#2F7DE1"><rect x="552" y="252" width="16" height="16" rx="3"/><rect x="552" y="332" width="16" height="16" rx="3"/><rect x="512" y="292" width="16" height="16" rx="3"/><rect x="592" y="292" width="16" height="16" rx="3"/></g>
+<circle cx="115" cy="300" r="26" fill="#4DA3FF"/>
+<circle cx="115" cy="300" r="10" fill="#0B2A5B"/>
+<g fill="#4DA3FF"><rect x="108" y="268" width="14" height="12" rx="3"/><rect x="108" y="320" width="14" height="12" rx="3"/><rect x="83" y="293" width="12" height="14" rx="3"/><rect x="135" y="293" width="12" height="14" rx="3"/></g>
+<path d="M140 310 L190 320" fill="none" stroke="#4DA3FF" stroke-width="3" stroke-dasharray="6 6"/>
+<path d="M530 310 L490 318" fill="none" stroke="#4DA3FF" stroke-width="3" stroke-dasharray="6 6"/>
+</svg>
